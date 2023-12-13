@@ -7,9 +7,9 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class LoginResponseModel {
-    String userId, username, password, token, expires;
-    @JsonProperty("created_date")
-    String createdDate;
-    String isActive;
+  String userId, username, password, token, expires;
+  @JsonProperty("created_date")
+  String createdDate;
+  String isActive;
 
 }

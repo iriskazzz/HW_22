@@ -13,10 +13,8 @@ import java.util.List;
 
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
-import static io.restassured.RestAssured.given;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BookTests extends TestBase{
+public class BookTests extends TestBase {
 
   AuthorizationApi authorizationApi = new AuthorizationApi();
   BooksApi booksApi = new BooksApi();
@@ -25,8 +23,9 @@ public class BookTests extends TestBase{
 
   @Test
   @WithLogin
+  @DisplayName("Проверка удаления книги из коллекции через api")
   void deleteBookFromProfileTest() {
-    step("Удаление всех книг в коллекции", () -> {
+    step("Удаление всех книг из коллекции", () -> {
       booksApi.deleteAllBooks(loginResponse);
     });
     step("Добавление книги в коллекцию", () -> {
