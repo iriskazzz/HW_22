@@ -1,12 +1,12 @@
-package tests.extensions;
+package extensions;
 
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.openqa.selenium.Cookie;
 import tests.TestData;
-import tests.apiResponses.AuthorizationApi;
-import tests.models.LoginRequestModel;
-import tests.models.LoginResponseModel;
+import apiResponses.AuthorizationApi;
+import models.LoginRequestModel;
+import models.LoginResponseModel;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;

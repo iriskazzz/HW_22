@@ -1,12 +1,15 @@
 package tests;
 
+import models.AddBooksListRequestModel;
+import models.DeleteBookResponseModel;
+import models.IsbnModel;
+import models.LoginResponseModel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.ProfilePage;
-import tests.apiResponses.AuthorizationApi;
-import tests.apiResponses.BooksApi;
-import tests.extensions.WithLogin;
-import tests.models.*;
+import apiResponses.AuthorizationApi;
+import apiResponses.BooksApi;
+import extensions.WithLogin;
 
 import java.util.ArrayList;
 import java.util.List;

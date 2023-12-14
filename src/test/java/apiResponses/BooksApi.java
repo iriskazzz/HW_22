@@ -1,11 +1,13 @@
-package tests.apiResponses;
+package apiResponses;
 
-import tests.models.*;
+import models.AddBooksListRequestModel;
+import models.DeleteBookResponseModel;
+import models.LoginResponseModel;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.http.ContentType.JSON;
-import static tests.specs.ReqResSpec.requestSpec;
-import static tests.specs.ReqResSpec.responseSpec;
+import static specs.ReqResSpec.requestSpec;
+import static specs.ReqResSpec.responseSpec;
 
 public class BooksApi {
   public void deleteAllBooks(LoginResponseModel loginResponse) {
